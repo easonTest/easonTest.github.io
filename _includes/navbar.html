@@ -1,0 +1,35 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.title | escape }}</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{"/" | relative_url }}">About Me</a>
+        </li>
+
+
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{"/work" | relative_url }}" role="button" aria-haspopup="true" aria-expanded="false">Work Experience/Projects</a>
+          
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/work#Work Experience">Work Experience</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/work#projects">Projects</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://drive.google.com/file/d/1RF6KVXXFuPaQGKXSwxfcN0gH_vwBFQdL/view?usp=sharing">Resume</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

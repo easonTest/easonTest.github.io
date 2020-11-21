@@ -1,0 +1,75 @@
+// Bootstrap overrides for this template
+.btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 5px 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5%;
+  @include sans-serif-font;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 7.5) !important;
+    border-color: darken($primary, 7.5) !important;
+  }
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.5);
+  position:relative;
+  display:block;
+  z-index:10;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  border-color: $black;
+  outline: none;
+  background-color:transparent;
+  color: $black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  color: $primary;;
+}
+
+
+.col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-bottom: 5px;
+}
+
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #6c757d;
+}
+
+.card-text {
+  font-size:smaller;
+  margin-bottom: 0.4rem;
+  margin-top: 0.5rem;
+}
